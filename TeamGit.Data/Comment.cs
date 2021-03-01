@@ -13,17 +13,18 @@ namespace TeamGit.Data
         public int CommentId { get; set; }
 
         [Required]
-        public Guid OwnerId { get; set; }
+        public Guid AuthorId { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string Text { get; set; }
 
-        [Required]
-        public string Content { get; set; }
-
-        [Required]
-        public DateTimeOffset CreatedUtc { get; set; }
-
-        public DateTimeOffset? ModifiedUtc { get; set; }
+        public virtual List<string> listOfReplies {get;}
     }
 }
+
+/*int Id
+ string Text
+ Guid Author (using user ID)
+ (virtual list of Replies)
+ (Foreign Key to Post via Id w/ virtual Post) 
+*/
