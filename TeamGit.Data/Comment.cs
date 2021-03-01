@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,8 @@ namespace TeamGit.Data
 {
     public class Comment
     {
+        [ForeignKey(nameof(Post))]
+        public int PostId { get; set; }
         [Key]
         public int CommentId { get; set; }
 
@@ -22,9 +25,3 @@ namespace TeamGit.Data
     }
 }
 
-/*int Id
- string Text
- Guid Author (using user ID)
- (virtual list of Replies)
- (Foreign Key to Post via Id w/ virtual Post) 
-*/
