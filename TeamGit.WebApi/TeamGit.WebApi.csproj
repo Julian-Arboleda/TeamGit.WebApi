@@ -309,6 +309,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TeamGit.Data\TeamGit.Data.csproj">
+      <Project>{04829d78-9275-403e-8e2f-e3884aaf69d9}</Project>
+      <Name>TeamGit.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TeamGit.Models\TeamGit.Models.csproj">
       <Project>{6b90a918-ec12-417f-bc1f-cd3aef810d03}</Project>
       <Name>TeamGit.Models</Name>

@@ -17,7 +17,7 @@ namespace TeamGit.Services
             _userId = userId;
         }
 
-        public bool CreateReply(ReplyCreate model)
+        public bool CreateReplyService(ReplyCreate model)
         {
             var entity =
                 new Reply()
@@ -33,12 +33,8 @@ namespace TeamGit.Services
             }
         }
 
-        public object GetComments()
-        {
-            throw new NotImplementedException();
-        }
 
-        public IEnumerable<ReplyListItem> Replies()
+        public IEnumerable<ReplyListItem> GetReplies()
         {
             using (var ctx = new ApplicationDbContext())
             {
