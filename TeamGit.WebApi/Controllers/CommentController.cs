@@ -28,7 +28,6 @@ namespace TeamGit.WebApi.Controllers
             return Ok(comments);
         }
 
-        [HttpPost]
         public IHttpActionResult Post(CommentCreate comment)
         {
             if (!ModelState.IsValid)
