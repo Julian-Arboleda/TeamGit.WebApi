@@ -17,7 +17,7 @@ namespace TeamGit.Services
             _userId = userId;
         }
 
-        public bool CreateReplyService(ReplyCreate model)
+        public bool CreateReply(ReplyCreate model)
         {
             var entity =
                 new Reply()

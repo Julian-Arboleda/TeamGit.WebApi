@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using TeamGit.Models;
 using TeamGit.Services;
 
 namespace TeamGit.WebApi.Controllers
@@ -12,7 +13,7 @@ namespace TeamGit.WebApi.Controllers
     public class ReplyController : ApiController
     {
         [Authorize]
-        private ReplyService CreateCommentService()
+        private ReplyService CreateReplyService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var replyService = new ReplyService(userId);
@@ -27,14 +28,15 @@ namespace TeamGit.WebApi.Controllers
             return Ok(comments);
         }
 
-        public IHttpActionResult Post(CommentCreate comment)
+        [HttpPost]
+        public IHttpActionResult Post(ReplyCreate reply)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var service = CreateCommentService();
+            var service = CreateReplyService();
 
-            if (!service.CreateComment(comment))
+            if (!service.CreateReply(reply))
                 return InternalServerError();
 
             return Ok();
