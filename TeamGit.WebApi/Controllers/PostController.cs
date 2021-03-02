@@ -13,15 +13,12 @@ namespace TeamGit.WebApi.Controllers
     [Authorize]
     public class PostController : ApiController
     {
-        [HttpGet]
         public IHttpActionResult Get()
         {
             PostService postService = CreatePostService();
             var notes = postService.GetPosts();
             return Ok(notes);
         }
-
-        [HttpPost]
         public IHttpActionResult Post(PostCreate post)
         {
             if (!ModelState.IsValid)
@@ -34,8 +31,6 @@ namespace TeamGit.WebApi.Controllers
 
             return Ok();
         }
-
-        [HttpPost]
         private PostService CreatePostService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
