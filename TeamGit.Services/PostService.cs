@@ -35,7 +35,7 @@ namespace TeamGit.Services
             }
         }
 
-        public IEnumerable<PostListItem> GetPost()
+        public IEnumerable<PostListItem> GetPosts()
         {
             using (var ctx = new ApplicationDbContext())
             {
