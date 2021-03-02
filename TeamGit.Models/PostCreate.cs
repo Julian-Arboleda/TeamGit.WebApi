@@ -10,9 +10,12 @@ namespace TeamGit.Models
     public class PostCreate
     {
         [Required]
+
+        [MinLength(2, ErrorMessage = "Please enter at least 2 characters.")]
+        [MaxLength(400, ErrorMessage = "There are too many characters in this field.")]
         public string Title { get; set; }
+        [MaxLength(8000)]
         public string Text { get; set; }
-        public string Title { get; set; }
 
 
     }
