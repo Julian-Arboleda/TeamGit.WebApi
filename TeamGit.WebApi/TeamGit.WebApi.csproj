@@ -206,7 +206,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReplyController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -307,10 +309,6 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TeamGit.Data\TeamGit.Data.csproj">
-      <Project>{ca19ce4c-5153-4bd4-8e42-97e09efc3ef3}</Project>
-      <Name>TeamGit.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TeamGit.Models\TeamGit.Models.csproj">
       <Project>{6b90a918-ec12-417f-bc1f-cd3aef810d03}</Project>
       <Name>TeamGit.Models</Name>
