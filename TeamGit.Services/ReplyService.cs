@@ -33,12 +33,8 @@ namespace TeamGit.Services
             }
         }
 
-        public object GetComments()
-        {
-            throw new NotImplementedException();
-        }
 
-        public IEnumerable<ReplyListItem> Replies()
+        public IEnumerable<ReplyListItem> GetReplies()
         {
             using (var ctx = new ApplicationDbContext())
             {

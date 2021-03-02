@@ -33,7 +33,7 @@ namespace TeamGit.Services
             }
         }
 
-        public IEnumerable<CommentListItem> Comments()
+        public IEnumerable<CommentListItem> GetComments()
         {
             using (var ctx = new ApplicationDbContext())
             {
