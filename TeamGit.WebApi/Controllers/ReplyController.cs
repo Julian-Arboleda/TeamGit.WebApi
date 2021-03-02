@@ -24,8 +24,8 @@ namespace TeamGit.WebApi.Controllers
         public IHttpActionResult Get()
         {
             ReplyService replyService = CreateReplyService();
-            var comments = replyService.GetReplies();
-            return Ok(comments);
+            var replies = replyService.GetReplies();
+            return Ok(replies);
         }
 
         [HttpPost]
