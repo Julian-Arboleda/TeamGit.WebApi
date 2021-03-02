@@ -25,7 +25,7 @@ namespace TeamGit.Data
 
 
         [ForeignKey(nameof(Reply))]
-        public int ReplyId { get; set; }
+        public int? ReplyId { get; set; }
         public virtual Reply Reply { get; set; }
 
     }
