@@ -64,14 +64,14 @@
     <Compile Include="ReplyListItem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TeamGit.Data\TeamGit.Data.csproj">
-      <Project>{ca19ce4c-5153-4bd4-8e42-97e09efc3ef3}</Project>
-      <Name>TeamGit.Data</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeamGit.Data\TeamGit.Data.csproj">
+      <Project>{04829d78-9275-403e-8e2f-e3884aaf69d9}</Project>
+      <Name>TeamGit.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

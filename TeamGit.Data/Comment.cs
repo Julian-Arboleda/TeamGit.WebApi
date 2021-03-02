@@ -29,6 +29,5 @@ namespace TeamGit.Data
         public virtual Reply Reply { get; set; }
 
     }
-   
-}
 
+}

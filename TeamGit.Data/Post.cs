@@ -12,7 +12,7 @@ namespace TeamGit.Data
     {
         /* [Display(Name = "Your Note")]*/
         [Key]
-      
+
         public int PostId { get; set; }
 
         [Required]
@@ -24,7 +24,9 @@ namespace TeamGit.Data
         public string Text { get; set; }
 
 
+
         public virtual List<string> ListOfComments { get; }
+
 
         [ForeignKey(nameof(Comment))]
         public int CommentId { get; set; }
@@ -33,4 +35,3 @@ namespace TeamGit.Data
        
     }
 }
-
