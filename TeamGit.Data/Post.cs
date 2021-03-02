@@ -29,7 +29,7 @@ namespace TeamGit.Data
 
 
         [ForeignKey(nameof(Comment))]
-        public int CommentId { get; set; }
+        public int? CommentId { get; set; }
         public virtual Comment Comment { get; set; }
 
        
