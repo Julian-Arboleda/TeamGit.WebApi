@@ -8,6 +8,8 @@ namespace TeamGit.Models
 {
     public class PostCreate
     {
+        public string Title { get; set; }
+
 
     }
 }
