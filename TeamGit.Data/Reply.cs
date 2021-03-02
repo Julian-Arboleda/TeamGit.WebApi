@@ -10,8 +10,6 @@ namespace TeamGit.Data
 {
    public class Reply
     {
-        [ForeignKey(nameof(Comment))]
-        public int CommentId { get; set; }
         [Key]
         public int ReplyId { get; set; }
 
@@ -21,6 +19,6 @@ namespace TeamGit.Data
         [Required]
         public string Text { get; set; }
 
-        public virtual List<string> ListOfReplies { get; }
+        public virtual List<string> listOfReplies { get; }
     }
 }
