@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Comment.cs" />
     <Compile Include="IdentityModels.cs" />
+
     <Compile Include="Migrations\202103012134099_InitialCreate.cs" />
     <Compile Include="Migrations\202103012134099_InitialCreate.designer.cs">
       <DependentUpon>202103012134099_InitialCreate.cs</DependentUpon>
@@ -74,6 +75,19 @@
     <Compile Include="Migrations\202103021839506_meow.cs" />
     <Compile Include="Migrations\202103021839506_meow.designer.cs">
       <DependentUpon>202103021839506_meow.cs</DependentUpon>
+
+    <Compile Include="Migrations\202103021611587_InitialCreate.cs" />
+    <Compile Include="Migrations\202103021611587_InitialCreate.designer.cs">
+      <DependentUpon>202103021611587_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103021716299_postclass.cs" />
+    <Compile Include="Migrations\202103021716299_postclass.designer.cs">
+      <DependentUpon>202103021716299_postclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103021845541_stff.cs" />
+    <Compile Include="Migrations\202103021845541_stff.designer.cs">
+      <DependentUpon>202103021845541_stff.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Post.cs" />
@@ -85,6 +99,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+
     <EmbeddedResource Include="Migrations\202103012134099_InitialCreate.resx">
       <DependentUpon>202103012134099_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +111,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103021839506_meow.resx">
       <DependentUpon>202103021839506_meow.cs</DependentUpon>
+
+    <EmbeddedResource Include="Migrations\202103021611587_InitialCreate.resx">
+      <DependentUpon>202103021611587_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103021716299_postclass.resx">
+      <DependentUpon>202103021716299_postclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103021845541_stff.resx">
+      <DependentUpon>202103021845541_stff.cs</DependentUpon>
+
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
