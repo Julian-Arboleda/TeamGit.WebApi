@@ -8,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace TeamGit.Data
 {
-    public class Reply
+   public class Reply
+
     {
+
+
         [Key]
         public int ReplyId { get; set; }
 
@@ -19,6 +22,6 @@ namespace TeamGit.Data
         [Required]
         public string Text { get; set; }
 
-        public virtual List<string> listOfReplies { get; }
+        public virtual List<string> ListOfReplies { get; }
     }
 }
