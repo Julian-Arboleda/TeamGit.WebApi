@@ -22,6 +22,5 @@ namespace TeamGit.Data
         public string Text { get; set; }
 
         public virtual List<string> listOfReplies { get; }
-        public int ohshit { get; set; }
     }
 }
