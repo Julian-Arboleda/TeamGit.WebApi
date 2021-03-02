@@ -67,9 +67,7 @@
     <Compile Include="Migrations\202103021717213_larry.designer.cs">
       <DependentUpon>202103021717213_larry.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103021720193_larry1.cs" />
-    <Compile Include="Migrations\202103021720193_larry1.designer.cs">
-      <DependentUpon>202103021720193_larry1.cs</DependentUpon>
+   
     </Compile>
     <Compile Include="Migrations\202103021839506_meow.cs" />
     <Compile Include="Migrations\202103021839506_meow.designer.cs">
