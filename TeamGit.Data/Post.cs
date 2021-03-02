@@ -22,7 +22,10 @@ namespace TeamGit.Data
         [Required]
         public string Text { get; set; }
 
-        public virtual List<string> listOfComments { get; }
+        public virtual List<string> ListOfComments { get; }
+        [ForeignKey(nameof(Comment))]
+        public int CommentId { get; set; }
+        public virtual Comment Comment { get; set; }
 
     }
 }
