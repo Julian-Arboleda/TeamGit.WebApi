@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TeamGit.Data
 {
    public class Reply
-    {
+    
         [Key]
         public int ReplyId { get; set; }
 

@@ -81,6 +81,9 @@
     <Compile Include="Migrations\202103020309279_teamgit.cs" />
     <Compile Include="Migrations\202103020309279_teamgit.Designer.cs">
       <DependentUpon>202103020309279_teamgit.cs</DependentUpon>
+    <Compile Include="Migrations\202103020307272_team.cs" />
+    <Compile Include="Migrations\202103020307272_team.Designer.cs">
+      <DependentUpon>202103020307272_team.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Post.cs" />
@@ -97,6 +100,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103020309279_teamgit.resx">
       <DependentUpon>202103020309279_teamgit.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103020307272_team.resx">
+      <DependentUpon>202103020307272_team.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
