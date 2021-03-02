@@ -8,6 +8,8 @@ namespace TeamGit.Models
 {
     public class CommentListItem
     {
+        public int CommentId { get; set; }
 
+        public string Text { get; set; }
     }
 }

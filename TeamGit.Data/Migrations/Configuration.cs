@@ -10,7 +10,8 @@ namespace TeamGit.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-        }
+
+            ContextKey = "TeamGit.Data.ApplicationDbContext";        }
 
         protected override void Seed(TeamGit.Data.ApplicationDbContext context)
         {
